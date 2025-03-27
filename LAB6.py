@@ -5,10 +5,10 @@ def factorial(x):
         return 1
     return x * factorial(x - 1)
 
-def degree_to_radian(degree):
+def degree_to_radiana(degree):
     return degree * (pi / 180)
 
-def my_sin(x_degrees, terms=10):
+def sine_x(x_degrees, terms=10):
     x = degree_to_radian(x_degrees)
     result = 0
     for n in range(terms):
@@ -28,7 +28,7 @@ def harmonic(n):
 
 if __name__ == "__main__":
     # 1
-    print("Faktöriyel (5!):", factorial(5)) 
+    print("Factorial (5!):", factorial(5)) 
 
     #2
     print("sin(30):", my_sin(30)) 
