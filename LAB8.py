@@ -74,7 +74,7 @@ print("\n--- Items from the Last 5 Years ---")
 for item in loaded_items:
     if(item.is_recent(5)):
         print(item)
-print("\n--- Articles with DOI starting with '10.123' ---")
+print("\n--- Articles with DOI starting with '10.1234' ---")
 for item in loaded_items:
     if(isinstance(item,Article) and item.doi.startswith("10.1234")):
         print(item)
